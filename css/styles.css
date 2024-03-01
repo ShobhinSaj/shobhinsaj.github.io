@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-image: url("/img/gradient.jpeg");
+}
 .inter {
   font-family: "Inter", sans-serif;
 }
@@ -97,9 +99,7 @@
   width: 100%;
 }
 
-body {
-  background-image: url("/img/gradient.jpeg");
-}
+
 
 /* Medium Screens */
 
