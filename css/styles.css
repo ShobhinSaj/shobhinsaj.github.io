@@ -10,6 +10,7 @@
 }
 body {
   background-image: url("/img/gradient.jpeg");
+  background-size: cover;
 }
 .inter {
   font-family: "Inter", sans-serif;
