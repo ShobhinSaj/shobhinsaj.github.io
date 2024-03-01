@@ -1,0 +1,106 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Madimi+One:400,500,700,900&display=swap");
+/* CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.madimi {
+  font-family: "Madimi One", sans-serif;
+}
+
+.vw-5 {
+  font-size: 5vw;
+}
+
+.vw-2 {
+  font-size: 2vw;
+}
+
+.vw-3 {
+  font-size: 3vw;
+}
+
+.navbar {
+  filter: drop-shadow(0px 5px 10px #5b5b5b);
+}
+
+.navbar-toggler {
+  padding: 0;
+  width: 60px;
+  height: 46px;
+}
+.navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: rgb(55, 229, 73);
+  margin: 7px 0;
+  transition: all 0.3s;
+}
+.navbar-toggler[aria-expanded=true] .s-1 {
+  transform: rotate(45deg);
+  margin: 0;
+  margin-bottom: -4px;
+  background-color: rgb(252, 23, 23);
+}
+.navbar-toggler[aria-expanded=true] .s-2 {
+  display: none;
+}
+.navbar-toggler[aria-expanded=true] .s-3 {
+  transform: rotate(-45deg);
+  margin: 0;
+  margin-top: -4px;
+  background-color: rgb(252, 23, 23);
+}
+.navbar-toggler[aria-expanded=false] .s-1,
+.navbar-toggler[aria-expanded=false] .s-2,
+.navbar-toggler[aria-expanded=false] .s-3 {
+  transform: none;
+}
+
+.navbar-nav > li > a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+.navbar-nav > li a:after {
+  content: "";
+  position: absolute;
+  background-color: #70e738;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.navbar-nav > li a:hover {
+  color: #ffffff;
+}
+.navbar-nav > li a:hover:after {
+  width: 100%;
+}
+
+body {
+  background-image: url("/img/gradient.jpeg");
+}
+
+/* Medium Screens */
+
+/*# sourceMappingURL=styles.css.map */
