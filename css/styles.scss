@@ -17,8 +17,7 @@
 }
 .madimi{
     font-family: "Madimi One", sans-serif;
-   
-  }
+   }
 .vw-5{
     font-size: 5vw;
 }
@@ -108,15 +107,17 @@
 }
 header {
   position: relative;
-  height: 800px;
+  height: 750px;
   min-height: 500px;
   width: 100%;
   background: #ffffff url(/img/gradient.jpg) no-repeat top center;
-  
   background-size: cover !important;
  -webkit-background-size: cover !important;
   //text-align: center;
   overflow: hidden;
+}
+header>nav+div{
+  margin-top: 6rem;
 }
 .main_cntnt{
   background: rgba( 255, 255, 255, 0.25 );
@@ -127,9 +128,9 @@ header {
 
 }
 .resume-btn .btn-success{
-  background-color: rgb(178, 46, 235) ;
+  background-color: #6DECAF;
+  font-family: "Madimi One", sans-serif;
   filter: drop-shadow(-5px 3px 2px #000000);
- 
   border-radius: 15px;
   color: #000000;
   >a{
@@ -137,7 +138,7 @@ header {
   }
 }
 .resume-btn .btn-success:hover{
-  background-color: rgb(95, 36, 120) ;
+  background-color:#0d9d79 ;
   color: rgb(255, 255, 255);
   >a{
     color: #ffffff ;
@@ -147,7 +148,7 @@ header {
   display: flex;
   width: 250px;
   height: 70px;
-  border: 2px solid black;
+  //border: 2px solid black;
   justify-content: center;
   align-items: center;
   //background-color: #f2f2f2;
@@ -231,6 +232,24 @@ header {
 .instagram:hover svg {
   fill: #c13584;
 }
+header>p.scrolldown>a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #000000;
+  border-radius: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+header>p.scrolldown>a:hover { color: #2e9fa2; }
 
 @media (max-width: 1199px) {
     
