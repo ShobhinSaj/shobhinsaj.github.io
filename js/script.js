@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Resume download button script
     $('#downloadLink').on('click', function(e) {
     // Trigger download
       setTimeout(function() {
@@ -15,6 +16,16 @@ $(document).ready(function() {
         timer: 1500 // Adjust the timer as needed
     });
   }
+  // Responsive nav script
+    $('.nav-link').on('click', function () {
+     // $('.nav-link').removeClass('active');
+      //$(this).addClass('active');
+      $('.navbar-toggler').addClass('collapsed');
+      $('.navbar-toggler').attr('aria-expanded', 'false');
+      $('.navbar-toggler+div').removeClass('collapse show');
+      $('.navbar-toggler+div').addClass('collapse');
+    });
+
     removeClassOnSmallScreen();
     $(window).resize(removeClassOnSmallScreen);
 
