@@ -8,10 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-image: url("/img/gradient.jpeg");
-  background-size: cover;
-}
+
 .inter {
   font-family: "Inter", sans-serif;
 }
@@ -86,7 +83,7 @@ body {
 .navbar-nav > li a:after {
   content: "";
   position: absolute;
-  background-color: #70e738;
+  background-color: #4fef3a;
   height: 3px;
   width: 0;
   left: 0;
@@ -100,7 +97,135 @@ body {
   width: 100%;
 }
 
+.navbar-nav .nav-link.active {
+  color: #4fef3a !important;
+  font-weight: bold;
+}
 
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: #ffffff url(/img/gradient.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  overflow: hidden;
+}
+
+.main_cntnt {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.resume-btn .btn-success {
+  background-color: rgb(178, 46, 235);
+  filter: drop-shadow(-5px 3px 2px #000000);
+  border-radius: 15px;
+  color: #000000;
+}
+.resume-btn .btn-success > a {
+  color: #000000;
+}
+
+.resume-btn .btn-success:hover {
+  background-color: rgb(95, 36, 120);
+  color: rgb(255, 255, 255);
+}
+.resume-btn .btn-success:hover > a {
+  color: #ffffff;
+}
+
+.social-buttons {
+  display: flex;
+  width: 250px;
+  height: 70px;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1529411765);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px 3px;
+  border-radius: 4em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1529411765);
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1529411765);
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
 
 /* Medium Screens */
 
