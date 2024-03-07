@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  $('.hamburger-icon').on('click',toggleMenu);
+  $('menu-links.li a').on('click',toggleMenu);
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
   // Resume download button script
     $('#downloadLink').on('click', function(e) {
     // Trigger download
@@ -16,34 +25,5 @@ $(document).ready(function() {
         timer: 1500 // Adjust the timer as needed
     });
   }
-  // Responsive nav script
-    $('.nav-link').on('click', function () {
-     // $('.nav-link').removeClass('active');
-      //$(this).addClass('active');
-      $('.navbar-toggler').addClass('collapsed');
-      $('.navbar-toggler').attr('aria-expanded', 'false');
-      $('.navbar-toggler+div').removeClass('collapse show');
-      $('.navbar-toggler+div').addClass('collapse');
-    });
-
-    removeClassOnSmallScreen();
-    $(window).resize(removeClassOnSmallScreen);
-
-    function removeClassOnSmallScreen() {
-      var nav = $('nav');
-      var screenWidth = $(window).width();
-      var breakpoint1 = 767;
-        // Remove the class if the screen width is below the breakpoint
-      if (screenWidth < breakpoint1) {
-        nav.removeClass('w-75 rounded-4');
-        nav.addClass('rounded-bottom-4');
-        $('.hero_img').css("width", "80%");
-        $('.scrolldown').hide();
-      } else {
-        // Add the class back if the screen width is equal to or above the breakpoint
-        nav.removeClass('rounded-bottom-4');
-        nav.addClass('w-75 rounded-4');
-        $('.scrolldown').show();
-      }
-    }
+  
   });
