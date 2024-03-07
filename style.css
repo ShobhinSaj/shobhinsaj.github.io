@@ -1,6 +1,8 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Madimi+One:400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
 
 * {
   margin: 0;
@@ -100,6 +102,7 @@ nav {
   width: 100%;
 }
 .logo {
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
 }
 
@@ -243,6 +246,7 @@ section {
 }
 
 .title {
+  font-family: "Madimi One", sans-serif;
   font-size: 3rem;
   text-align: center;
 }
@@ -260,7 +264,9 @@ section {
   cursor: pointer;
   height: 2rem;
 }
-
+img.icon:hover{
+  filter: drop-shadow(0px 12px 16px #4be269);
+}
 /* BUTTONS */
 
 .btn-container {
