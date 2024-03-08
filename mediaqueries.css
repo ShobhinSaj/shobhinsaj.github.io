@@ -100,4 +100,8 @@
   .text-container {
     text-align: justify;
   }
+  .footer-nav{
+    border-radius: 15px;
+    padding-bottom: 8px;
+  }
 }
