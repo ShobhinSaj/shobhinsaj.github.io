@@ -7,7 +7,7 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-
+  
   // Resume download button script
     $('#downloadLink').on('click', function(e) {
     // Trigger download

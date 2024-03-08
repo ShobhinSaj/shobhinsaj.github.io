@@ -475,10 +475,11 @@ article .icon {
   margin: 2rem auto;
   padding: 0.5rem;
 }
-.article-container:hover {
+
+#projects .article-container:hover {
   transition: transform 0.3s ease;
 }
-.article-container:hover {
+#projects .article-container:hover {
   transform: scale(1.2);
 }
 .contact-info-container {
