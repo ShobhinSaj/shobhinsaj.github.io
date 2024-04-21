@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+   padding-bottom:5vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -52,10 +52,7 @@
   footer {
     height: 40vh;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
+  
   article {
     font-size: 1rem;
   }

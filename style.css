@@ -9,6 +9,8 @@
   padding: 0;
 }
 
+
+
 body {
   font-family: "Poppins", sans-serif;
   background: #161415 url(assets/bg.jpg) no-repeat top center;
@@ -216,6 +218,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  position: relative;
 }
 
 .section-container {
@@ -228,7 +231,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+ 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.34);
   border-radius: 16px;
@@ -441,10 +444,9 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
+  transition: all 0.3s ease;
+  width: 100%;
+  }
 
 .project-title {
   margin: 1rem;
@@ -475,11 +477,14 @@ article .icon {
   margin: 2rem auto;
   padding: 0.5rem;
 }
-
-#projects .article-container:hover {
-  transition: transform 0.3s ease;
+#projects .article-container{
+  border-radius: 2rem;
+  overflow: hidden;
 }
-#projects .article-container:hover {
+#projects .article-container img{
+  object-fit: cover;
+}
+#projects .article-container img:hover {
   transform: scale(1.2);
 }
 .contact-info-container {
