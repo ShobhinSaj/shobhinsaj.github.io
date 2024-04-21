@@ -343,9 +343,8 @@ img.icon:hover{
 
 #about {
   position: relative;
-
+  overflow:hidden ;
 }
-
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -384,7 +383,7 @@ img.icon:hover{
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  /* height: 80%; */
 }
 
 .section__pic-container {
