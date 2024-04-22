@@ -131,6 +131,7 @@ nav {
 }
 
 .hamburger-icon {
+  box-sizing: content-box !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
